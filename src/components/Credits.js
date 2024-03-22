@@ -12,7 +12,7 @@ const Credits = (props) => {
   const [name, setName] = useState('');
   function handleSubmit (e) {
     e.preventDefault();
-    if(amount == 0 || name == "") return;
+    if(amount === 0 || name === "") return;
     const newCredit = { name, amount };
     const updatedCredits = [...creditList, newCredit];
     setCreditList(updatedCredits);
